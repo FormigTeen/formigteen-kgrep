@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "formigteen-kgrep"
+version = "0.1.0"
+description = ""
+authors = ["Matheus Freitas <msformigteen@live.com>"]
+readme = "README.md"
+packages = [{include = "formigteen_kgrep"}]
+
+[tool.poetry.scripts]
+formigteen-kgrep = "formigteen_kgrep.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = {extras = ["all"], version = "^0.9.0"}
+rich = "^13.5.2"
+pyperclip = "^1.8.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
